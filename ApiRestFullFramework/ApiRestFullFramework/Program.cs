@@ -61,7 +61,7 @@ namespace LecturaJsonResponse
 
                 if (option == 1)
                 {
-                    getBook();
+                    getBook(conexionDB);
                 }
                 if (option == 2)
                 {
@@ -75,14 +75,14 @@ namespace LecturaJsonResponse
 
             //addData(rs.data.libro.ToString(), rs.data.descripcion.ToString(), rs.data.categoria.ToString(), conexionDB);
 
-            Console.ReadKey();
+       
         }
         public static void printMenu()
         {
             Console.WriteLine("\n1-Get book");
             Console.WriteLine("\n2-Add book");
             Console.WriteLine("\n3-List book");
-            Console.WriteLine("\n4-Exit");
+            Console.WriteLine("\n4-Salir");
         }
 
         public static void listbook(string url)
@@ -113,15 +113,24 @@ namespace LecturaJsonResponse
                 result = oSR.ReadToEnd().Trim();
             }
 
-            JObject jsonIdentado = JObject.Parse(result.ToString());
+            using (var sr = new StringReader(result))
+            {
+                using (var sw = new StringWriter())
+                {
+                    var jr = new JsonTextReader(sr);
+                    var jw = new JsonTextWriter(sw) { Formatting = Formatting.Indented };
+                    jw.WriteToken(jr);
 
-            var rs = JsonConvert.DeserializeObject<Root>(result);
+                    //TENGO QUE MOSTRAR LA VARIABLE SW//
+                    
+                    Console.WriteLine(sw.ToString());
+                }
+            }
 
-
-            Console.WriteLine("\n" + rs);
+            
         }
 
-        public static void getBook()
+        public static void getBook(SqlConnection conexionDB)
         {
             string url = "http://bibliotecum.herokuapp.com/api/getbook";
 
@@ -136,6 +145,8 @@ namespace LecturaJsonResponse
             JObject jsonIdentado = JObject.Parse(result);
 
             var rs = JsonConvert.DeserializeObject<Root>(result);
+
+            addData(rs.data.libro, rs.data.descripcion, rs.data.categoria, conexionDB);
 
             Console.WriteLine("\nNombre: " + rs.data.libro + "\nDescripcion: " + rs.data.descripcion + "\nCategoria: " + rs.data.categoria);
         }

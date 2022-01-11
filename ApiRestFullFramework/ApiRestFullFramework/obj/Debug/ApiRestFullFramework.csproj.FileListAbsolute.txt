@@ -8,3 +8,13 @@ C:\Users\Rodrigo\source\repos\ApiRestFullFramework\ApiRestFullFramework\bin\Debu
 C:\Users\Rodrigo\source\repos\ApiRestFullFramework\ApiRestFullFramework\obj\Debug\ApiRestFullFramework.csproj.CopyComplete
 C:\Users\Rodrigo\source\repos\ApiRestFullFramework\ApiRestFullFramework\obj\Debug\ApiRestFullFramework.exe
 C:\Users\Rodrigo\source\repos\ApiRestFullFramework\ApiRestFullFramework\obj\Debug\ApiRestFullFramework.pdb
+C:\Users\Roberto\Source\Repos\ApiCS\ApiRestFullFramework\ApiRestFullFramework\bin\Debug\ApiRestFullFramework.exe.config
+C:\Users\Roberto\Source\Repos\ApiCS\ApiRestFullFramework\ApiRestFullFramework\bin\Debug\ApiRestFullFramework.exe
+C:\Users\Roberto\Source\Repos\ApiCS\ApiRestFullFramework\ApiRestFullFramework\bin\Debug\ApiRestFullFramework.pdb
+C:\Users\Roberto\Source\Repos\ApiCS\ApiRestFullFramework\ApiRestFullFramework\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Roberto\Source\Repos\ApiCS\ApiRestFullFramework\ApiRestFullFramework\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Roberto\Source\Repos\ApiCS\ApiRestFullFramework\ApiRestFullFramework\obj\Debug\ApiRestFullFramework.csproj.AssemblyReference.cache
+C:\Users\Roberto\Source\Repos\ApiCS\ApiRestFullFramework\ApiRestFullFramework\obj\Debug\ApiRestFullFramework.csproj.CoreCompileInputs.cache
+C:\Users\Roberto\Source\Repos\ApiCS\ApiRestFullFramework\ApiRestFullFramework\obj\Debug\ApiRestFullFramework.csproj.CopyComplete
+C:\Users\Roberto\Source\Repos\ApiCS\ApiRestFullFramework\ApiRestFullFramework\obj\Debug\ApiRestFullFramework.exe
+C:\Users\Roberto\Source\Repos\ApiCS\ApiRestFullFramework\ApiRestFullFramework\obj\Debug\ApiRestFullFramework.pdb
